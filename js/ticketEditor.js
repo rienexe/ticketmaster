@@ -188,6 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         localStorage.setItem("localTickets.json", JSON.stringify(localTickets));
 
-        window.location.href = "pages/tickets/networks.html";
+        window.location.href = "/ticketmaster/pages/tickets/networks.html";
     });
 });
