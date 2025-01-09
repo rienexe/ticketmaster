@@ -2,7 +2,7 @@ let networks = [];
 
 // Load networks and initialize filters
 async function loadNetworks() {
-    const response = await fetch('/data/networks.json');
+    const response = await fetch('data/networks.json');
     const data = await response.json();
     networks = Object.entries(data.networks).map(([id, network]) => ({ id, ...network }));
 
@@ -80,7 +80,7 @@ function displayCards(filteredNetworks) {
             ${network.location}
           </h3>
           <p class="card-text">${network.operators.join(', ')}</p>
-          <a href="/pages/ticket/quiz?network=${network.id}" class="btn btn-primary">Find your Ticket</a>
+          <a href="pages/ticket/quiz?network=${network.id}" class="btn btn-primary">Find your Ticket</a>
         </div>
         <div class="card-footer">
           ${network.services.join(', ')}
