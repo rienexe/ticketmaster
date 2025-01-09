@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let networks = [];
 
     function loadNetworks() {
-        fetch("/data/networks.json")
+        fetch("data/networks.json")
             .then(response => response.json())
             .then(data => {
                 networks = Object.entries(data.networks).map(([id, network]) => ({ id, ...network }));
                 populateCountryDropdown();
-                detectUserLocation(); // Versuche, das Land automatisch zu setzen
+                detectUserLocation();
             })
             .catch(error => console.error("Error loading networks.json:", error));
     }
@@ -50,13 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
             (position) => {
                 const { latitude, longitude } = position.coords;
 
-                // API für Umkehrgeokodierung nutzen
                 fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
                     .then(response => response.json())
                     .then(data => {
                         const userCountry = data.countryName;
 
-                        // Versuche, das Land im Dropdown zu setzen
                         const countryOption = Array.from(countrySelect.options).find(option => option.value === userCountry);
                         if (countryOption) {
                             countryOption.selected = true;
@@ -79,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     networkSelect.addEventListener("change", () => {
         submitButton.disabled = false;
         const selectedNetworkId = networkSelect.value;
-        submitButton.setAttribute("onclick", `location.href='/pages/ticket/quiz?network=${selectedNetworkId}'`);
+        submitButton.setAttribute("onclick", `location.href='pages/ticket/quiz?network=${selectedNetworkId}'`);
     });
 
     // Initialisieren
