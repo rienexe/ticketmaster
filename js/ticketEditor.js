@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let networkIdCounter = 1;
     let ticketId = 0;
 
-    // Verbindung zwischen Formularen
     const zonesSelection = document.getElementById("inputZoneCoverage");
     const serviceSelection = document.getElementById("inputServiceCoverage");
 
@@ -11,14 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const ticketTab = document.getElementById("collapseTwoButton");
     const ticketForm = document.getElementById("ticketForm");
 
-    // Daten speichern
     const localNetworks = { networks: {} };
     const localTickets = { tickets: {} };
 
-    // Deaktiviere den zweiten Tab initial
+    // temporarily deactivate second form
     ticketTab.disabled = true;
 
-    // Länderliste dynamisch abrufen und befüllen
     async function populateCountryDropdown() {
         const countrySelect = document.getElementById("inputCountry");
         try {
@@ -38,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     populateCountryDropdown();
 
-    // Transportnetzwerk speichern
     networkForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -56,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
             services
         };
 
-        // Travel Zones in das Multiselect des Ticket-Formulars einfügen
         zonesSelection.innerHTML = ""; // Reset
         zones.forEach(zone => {
             const option = document.createElement("option");
@@ -65,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
             zonesSelection.appendChild(option);
         });
 
-        // Services in das Multiselect des Ticket-Formulars einfügen
         serviceSelection.innerHTML = ""; // Reset
         services.forEach(service => {
             const option = document.createElement("option");
@@ -76,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         localStorage.setItem("localNetworks.json", JSON.stringify(localNetworks));
 
-        // zweiten Tab aktivieren
+        // activate second form
         ticketTab.disabled = false;
         ticketForm.disabled = false;
         networkForm.disabled = true;
@@ -85,10 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ticketTab.click();
     });
 
-    // price validation
     const validatePriceInput = (input) => {
         const value = input.value.trim();
-        const isValid = /^(\d+(\.\d{1,2})?)?$/.test(value); // Preis mit bis zu 2 Dezimalstellen
+        const isValid = /^(\d+(\.\d{1,2})?)?$/.test(value);
         if (isValid) {
             input.classList.remove("is-invalid");
         } else {
@@ -102,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ticketForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        // Werte aus den Formularfeldern abrufen
         const category = document.getElementById("inputCategory").value.trim();
         const name = document.getElementById("inputTicketName").value.trim();
         const validityType = document.querySelector("input[name='inputValidityType']:checked");
@@ -115,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const travelZoneCoverage = Array.from(zonesSelection.selectedOptions).map(option => option.value);
         const serviceCoverage = Array.from(serviceSelection.selectedOptions).map(option => option.value);
 
-        // Validity auswerten
         let validity;
         if (validityType) {
             if (validityType.id === "duration") {
@@ -143,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // create new ticket
         const ticket = {
             id: ticketId++,
             category,
@@ -167,7 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         localTickets.tickets[currentNetworkId].push(ticket);
 
-        // insert tickets into the table
         const ticketTable = document.querySelector("#ticketTable tbody");
         const row = document.createElement("tr");
         row.innerHTML = `
@@ -187,21 +176,18 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
         ticketTable.appendChild(row);
 
-        // Formular zurücksetzen
         ticketForm.reset();
     });
 
 
-    // Tickets final absenden
     document.querySelector("#collapseTwo .btn-primary:last-of-type").addEventListener("click", () => {
         if (localTickets.length === 0) {
             alert("No tickets added yet.");
             return;
         }
 
-        // Daten speichern (z. B. in localStorage)
         localStorage.setItem("localTickets.json", JSON.stringify(localTickets));
 
-        window.location.href = "/pages/tickets/networks.html";
+        window.location.href = "pages/tickets/networks.html";
     });
 });
