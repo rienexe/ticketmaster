@@ -377,6 +377,10 @@
                     "Pöstlingbergbahn"
                 ],
                 "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
                     "Railway"
                 ]
             }
