@@ -1,0 +1,70 @@
+{
+  "networks": {
+    "nl1": {
+      "location": "Amsterdam",
+      "country": "The Netherlands",
+      "operators": [
+        "GVB",
+        "NS"
+      ],
+      "services": [
+        "Bus",
+        "Coach",
+        "Tram",
+        "Light Rail",
+        "Rapid Transit",
+        "Commuter Rail",
+        "Ferry"
+      ]
+    },
+    "at1": {
+      "location": "Vienna",
+      "country": "Austria",
+      "operators": [
+        "Wiener Linien",
+        "ÖBB"
+      ],
+      "services": [
+        "Bus",
+        "Tram",
+        "Rapid Transit",
+        "Commuter Rail"
+      ]
+    },
+    "at2": {
+      "location": "Linz",
+      "country": "Austria",
+      "operators": [
+        "Linz AG Linien"
+      ],
+      "services": [
+        "Bus",
+        "Bus Rapid Transit",
+        "Trolleybus",
+        "Tram",
+        "Railway"
+      ],
+      "zones": [
+        "Kernzone Linz",
+        "Pöstlingbergbahn",
+        "OÖVV Zone Traun"
+      ]
+    },
+    "de1": {
+      "location": "Berlin",
+      "country": "Germany",
+      "operators": [
+        "BVG",
+        "S-Bahn Berlin",
+        "DB"
+      ],
+      "services": [
+        "Bus",
+        "Tram",
+        "Rapid Transit",
+        "Commuter Rail",
+        "Ferry"
+      ]
+    }
+  }
+}

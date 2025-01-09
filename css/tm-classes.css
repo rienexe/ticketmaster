@@ -1,0 +1,68 @@
+:root {
+    --skew: -5deg;
+    --skew-neg: 5deg;
+}
+
+.tm-head {
+    background-color: var(--tm-blue);
+    height: 30vh;
+    max-height: 300px;
+    min-height: calc(60px + 3rem + 100px);
+}
+
+.line {
+    margin-left: 13px;
+    width: 4px; /* Setzt die Breite der Linie auf 3px */
+    height: 60px; /* Höhe an den verfügbaren Platz anpassen */
+    background: linear-gradient(to bottom, transparent, var(--tm-yellow)); /* Farbverlauf von transparent zu Gelb */
+}
+
+.tm-skew {
+    transform: skew(var(--skew)) !important;
+    border-radius: var(--bs-border-radius-lg);
+}
+
+.tm-skew > * {
+    margin: var(--bs-border-radius-lg);
+    transform: skew(var(--skew-neg));
+}
+
+.tm-ticket {
+    display: inline-block;
+    transform: skew(var(--skew));
+    background-color: var(--tm-light);
+    border-radius: var(--bs-border-radius-lg);
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
+
+.tm-ticket-result {
+    transform: skew(var(--skew));
+    background-color: var(--tm-yellow);
+    border-radius: var(--bs-border-radius-lg);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.icon-stack {
+    position: relative;
+
+    margin-left: 0.15em;
+    margin-top: 0.15em;
+}
+
+.icon-stack i:nth-of-type(1) {
+    position: absolute;
+    top: -0.15em;
+    left: -0.15em;
+}
+
+.blur {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.breadcrumb-icon {
+    height: 30px;
+}

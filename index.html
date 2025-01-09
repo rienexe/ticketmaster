@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicketMaster</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/tm-theme.css">
+    <link rel="stylesheet" href="/css/tm-classes.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<main>
+    <header class="container fixed-top p-0 my-5">
+        <div class="d-flex flex-nowrap justify-content-end tm-skew gap-3 m-0">
+            <button class="btn btn-secondary shadow m-0" style="transform: skew(0)" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <i class="bi bi-list h2"></i>
+            </button>
+        </div>
+
+        <div class="offcanvas offcanvas-top blur" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="height: 100%">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navigation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body align-content-center">
+                <div class="container">
+                    <ul class="navbar-nav flex-column h3 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/pages/ticket/networks.html">
+                                <div class="icon-stack">
+                                    <i class="bi bi-map-fill text-primary"></i>
+                                    <i class="bi bi-map text-secondary"></i>
+                                    Networks Overview
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/pages/traveltips/forum.html">
+                                <div class="icon-stack">
+                                    <i class="bi bi-backpack-fill text-primary"></i>
+                                    <i class="bi bi-backpack text-secondary"></i>
+                                    Travel Tips
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <div class="icon-stack">
+                                    <i class="bi bi-person-fill text-primary"></i>
+                                    <i class="bi bi-person text-secondary"></i>
+                                    My Account
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid text-light py-5" style="background-color: var(--tm-blue); height: 60vh; max-height: 600px">
+        <div class="container h-100 align-content-center text-center">
+            <img src="assets/images/Ticket-Master-Logo.png"
+                 class="img-fluid mb-5"
+                 alt="TicketMaster Logo"
+                 style="max-height: 60px; object-fit: contain">
+            <h2>Find the Perfect Ticket for Your Journey!</h2>
+            <span class="badge rounded-pill text-bg-secondary">make public travel easy</span>
+            <span class="badge rounded-pill text-bg-secondary">save money</span>
+            <span class="badge rounded-pill text-bg-secondary">reduce CO<sub>2</sub> emission</span>
+        </div>
+        <div style="height: 60px"></div>
+    </section>
+
+    <section class="container-sm" style="margin-top: -60px">
+        <div class="tm-skew p-1 bg-secondary shadow">
+            <h2>Quiz - Ticket - Go!</h2>
+            <form>
+                <div class="row align-items-end justify-content-between">
+                    <div class="col">
+                        <label for="inputCountry" class="form-label"><b>1.</b> Select a Country</label>
+                        <select class="form-select" name="Country" id="inputCountry">
+                            <option selected disabled></option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="inputNetwork" class="form-label"><b>2.</b> Select a Network or City</label>
+                        <select class="form-select" name="Operator" id="inputNetwork" disabled>
+                            <option selected disabled></option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="submitButton" class="form-label"><b>3.</b> Take your individual quiz and...</label>
+                        <button type="button" class="btn btn-primary" id="submitButton" style="width: 100%">Find your Ticket</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2>TicketMaster - Your Travel Buddy</h2>
+        <div class="row text-bg-light rounded shadow-sm my-3 py-1">
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <div class="icon-stack h1">
+                    <i class="bi bi-ticket-fill text-primary"></i>
+                    <i class="bi bi-ticket text-secondary"></i>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Find your ideal Ticket</h3>
+                <p><b>Ticket Recommendation Quiz</b> - Answer a few simple questions about your travel preferences and let us recommend the best ticket for you.</p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <a href="pages/ticket/networks.html" class="btn btn-primary btn-block w-100">Find your Ticket</a>
+            </div>
+        </div>
+
+        <div class="row text-bg-light rounded shadow-sm my-3 py-1">
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <div class="icon-stack h1">
+                    <i class="bi bi-lightbulb-fill text-primary"></i>
+                    <i class="bi bi-lightbulb text-secondary"></i>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Get Inspiration for your next Journey</h3>
+                <p><b>Travel Tips Forum</b> - Browse travel tips and ideas shared by other users to make your next trip smoother, smarter, and more enjoyable.</p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <a href="#" class="btn btn-primary btn-block w-100">Explore Travel Tips</a>
+            </div>
+        </div>
+
+        <div class="row text-bg-light rounded shadow-sm my-3 py-1">
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <div class="icon-stack h1">
+                    <i class="bi bi-brightness-alt-high-fill text-primary"></i>
+                    <i class="bi bi-brightness-alt-high text-secondary"></i>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Boost your Eco Awareness</h3>
+                <p><b>Custom User Account</b> - Discover how much CO2 and costs you can save by choosing sustainable public transport options for your travels.</p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <a href="#" class="btn btn-primary btn-block w-100">Create Account</a>
+            </div>
+        </div>
+
+        <div class="row text-bg-light rounded shadow-sm my-3 py-1">
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <div class="icon-stack h1">
+                    <i class="bi bi-people-fill text-primary"></i>
+                    <i class="bi bi-people text-secondary"></i>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Driven by Enthusiasts</h3>
+                <p><b>Community-Driven App</b> -
+                    Contribute to the platform by adding ticket information, sharing travel tips, or updating operator details to help fellow travelers.<br>
+                </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <div class="btn-group btn-block w-100">
+                    <a href="#" class="btn btn-primary">Create Account</a>
+                    <a href="#" class="btn btn-primary">Login</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <script src="js/dynamicDropdown.js"></script>
+</body>
+</html>

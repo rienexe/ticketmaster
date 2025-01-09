@@ -1,0 +1,385 @@
+{
+    "tickets": {
+        "at2": [
+            {
+                "id": 0,
+                "category": "single-trip or day ticket",
+                "name": "MAXI - Fahrschein für 24 Stunden",
+                "validity_type": "duration",
+                "validity": "24 hour(s)",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 6.0,
+                "reduced_price": 3.0,
+                "travel_zone_coverage": [
+                    "Kernzone Linz"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram"
+                ]
+            },
+            {
+                "id": 1,
+                "category": "single-trip or day ticket",
+                "name": "MIDI - Fahrschein für eine Langstrecke",
+                "validity_type": "trip",
+                "validity": "1 long+transfer",
+                "transferability": "no",
+                "carriage_of_children": "no",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 3.0,
+                "reduced_price": 1.5,
+                "travel_zone_coverage": [
+                    "Kernzone Linz"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram"
+                ]
+            },
+            {
+                "id": 2,
+                "category": "single-trip or day ticket",
+                "name": "MINI - Fahrschein für eine Kurzstrecke",
+                "validity_type": "trip",
+                "validity": "1 short+transfer",
+                "transferability": "no",
+                "carriage_of_children": "no",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 1.5,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Trolleybus",
+                    "Tram"
+                ]
+            },
+            {
+                "id": 3,
+                "category": "single-trip or day ticket",
+                "name": "1h-Ticket",
+                "validity_type": "duration",
+                "validity": "1 hour(s)",
+                "transferability": "no",
+                "carriage_of_children": "no",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 3.0,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram"
+                ]
+            },
+            {
+                "id": 4,
+                "category": "single-trip or day ticket",
+                "name": "Jugendticket - Fahrschein für 24 Stunden",
+                "validity_type": "duration",
+                "validity": "24 hour(s)",
+                "transferability": "no",
+                "carriage_of_children": "no",
+                "carriage_of_dogs": "no",
+                "passenger_type": "adolescent",
+                "regular_price": 3.0,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram"
+                ]
+            },
+            {
+                "id": 5,
+                "category": "single-trip or day ticket",
+                "name": "Jugendticket - Fahrschein für eine Langstrecke",
+                "validity_type": "trip",
+                "validity": "1 long+transfer",
+                "transferability": "no",
+                "carriage_of_children": "no",
+                "carriage_of_dogs": "no",
+                "passenger_type": "adolescent",
+                "regular_price": 1.5,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram"
+                ]
+            },
+            {
+                "id": 6,
+                "category": "week or month ticket",
+                "name": "Wochenkarte",
+                "validity_type": "duration",
+                "validity": "7 days(s)",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 19.1,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram"
+                ]
+            },
+            {
+                "id": 7,
+                "category": "week or month ticket",
+                "name": "Monatskarte",
+                "validity_type": "duration",
+                "validity": "1 month(s)",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "yes",
+                "passenger_type": "regular",
+                "regular_price": 60.5,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
+                    "Railway"
+                ]
+            },
+            {
+                "id": 8,
+                "category": "week or month ticket",
+                "name": "Senioren-Monatskarte",
+                "validity_type": "duration",
+                "validity": "1 month(s)",
+                "transferability": "no",
+                "carriage_of_children": "no",
+                "carriage_of_dogs": "yes",
+                "passenger_type": "seniors",
+                "regular_price": 33.6,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
+                    "Railway"
+                ]
+            },
+            {
+                "id": 9,
+                "category": "week or month ticket",
+                "name": "Hunde-Monatskarte",
+                "validity_type": "duration",
+                "validity": "1 month(s)",
+                "transferability": "no",
+                "carriage_of_children": "no",
+                "carriage_of_dogs": "no",
+                "passenger_type": "dog",
+                "regular_price": 33.6,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
+                    "Railway"
+                ]
+            },
+            {
+                "id": 10,
+                "category": "season or year ticket",
+                "name": "MEGA-Ticket - übertragbar (Jahreskarte)",
+                "validity_type": "duration",
+                "validity": "12 month(s)",
+                "transferability": "yes",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "yes",
+                "passenger_type": "regular",
+                "regular_price": 595.0,
+                "reduced_price": 285.0,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
+                    "Railway"
+                ]
+            },
+            {
+                "id": 11,
+                "category": "season or year ticket",
+                "name": "MEGA-Ticket - Senioren (Jahreskarte)",
+                "validity_type": "duration",
+                "validity": "12 month(s)",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "yes",
+                "passenger_type": "regular",
+                "regular_price": 279.0,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
+                    "Railway"
+                ]
+            },
+            {
+                "id": 12,
+                "category": "season or year ticket",
+                "name": "MEGA-Ticket - Studierende (Semesterkarte)",
+                "validity_type": "duration",
+                "validity": "6 month(s)",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "yes",
+                "passenger_type": "regular",
+                "regular_price": 201.5,
+                "reduced_price": 83.5,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
+                    "Railway"
+                ]
+            },
+            {
+                "id": 13,
+                "category": "season or year ticket",
+                "name": "KlimaTicket Kernzone Linz (Jahreskarte)",
+                "validity_type": "duration",
+                "validity": "6 month(s)",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "yes",
+                "passenger_type": "regular",
+                "regular_price": 393.0,
+                "reduced_price": null,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Bus",
+                    "Bus Rapid Transit",
+                    "Trolleybus",
+                    "Tram",
+                    "Railway"
+                ]
+            },
+            {
+                "id": 14,
+                "category": "special ticket",
+                "name": "Berg- oder Talfahrt",
+                "validity_type": "trip",
+                "validity": "1 long",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 5.1,
+                "reduced_price": 2.6,
+                "travel_zone_coverage": [
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Railway"
+                ]
+            },
+            {
+                "id": 15,
+                "category": "special ticket",
+                "name": "Berg- und Talfahrt",
+                "validity_type": "trip",
+                "validity": "1 long",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 8.5,
+                "reduced_price": 4.3,
+                "travel_zone_coverage": [
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Railway"
+                ]
+            },
+            {
+                "id": 16,
+                "category": "special ticket",
+                "name": "Erlebnisticket (Berg- und Talfahrt und 24h-Karte gesamtes Liniennetz)",
+                "validity_type": "duration",
+                "validity": "24 hour(s)",
+                "transferability": "no",
+                "carriage_of_children": "yes",
+                "carriage_of_dogs": "no",
+                "passenger_type": "regular",
+                "regular_price": 12.8,
+                "reduced_price": 6.4,
+                "travel_zone_coverage": [
+                    "Kernzone Linz",
+                    "Pöstlingbergbahn"
+                ],
+                "service_coverage": [
+                    "Railway"
+                ]
+            }
+        ]
+    }
+}

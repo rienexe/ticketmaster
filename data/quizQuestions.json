@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "text": "What type of ticket do you need?",
+      "options": [
+        {
+          "text": "Single-Trip or Day Ticket",
+          "value": "single-trip or day ticket"
+        },
+        {
+          "text": "Week or Month Ticket",
+          "value": "week or month ticket"
+        },
+        {
+          "text": "Season or Year Ticket",
+          "value": "season or year ticket"
+        },
+        {
+          "text": "Special Ticket (e.g. Touristic)",
+          "value": "special ticket"
+        }
+      ],
+      "filter_property": "category"
+    },
+    {
+      "id": 1,
+      "text": "Should the ticket be valid for a certain amount of time or a number of trips?",
+      "options": [
+        {
+          "text": "Time-based",
+          "value": "duration"
+        },
+        {
+          "text": "Trip-based",
+          "value": "trip"
+        }
+      ],
+      "filter_property": "validity_type"
+    },
+    {
+      "id": 2,
+      "text": "Is transferability important for you?",
+      "options": [
+        {
+          "text": "Yes",
+          "value": "yes"
+        },
+        {
+          "text": "No",
+          "value": null
+        }
+      ],
+      "filter_property": "transferability"
+    },
+    {
+      "id": 3,
+      "text": "Will you be traveling with children?",
+      "options": [
+        {
+          "text": "Yes",
+          "value": "yes"
+        },
+        {
+          "text": "No",
+          "value": null
+        }
+      ],
+      "filter_property": "carriage_of_children"
+    },
+    {
+      "id": 4,
+      "text": "Will you be traveling with a dog?",
+      "options": [
+        {
+          "text": "Yes",
+          "value": "yes"
+        },
+        {
+          "text": "No",
+          "value": null
+        }
+      ],
+      "filter_property": "carriage_of_dogs"
+    },
+    {
+      "id": 5,
+      "text": "Who will be using the ticket?",
+      "options": [
+        {
+          "text": "Reqular Passenger (Adult)",
+          "value": "regular"
+        },
+        {
+          "text": "Children",
+          "value": "children"
+        },
+        {
+          "text": "Adolescent (Young People, Students)",
+          "value": "adolescent"
+        },
+        {
+          "text": "Senior (Pensioner)",
+          "value": "seniors"
+        },
+        {
+          "text": "Dog",
+          "value": "dog"
+        }
+      ],
+      "filter_property": "passenger_type"
+    }
+  ]
+}
