@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
     async function loadQuizData() {
         const networkId = getUrlParam("network");
 
-        const questionsResponse = await fetch("/data/quizQuestions.json");
+        const questionsResponse = await fetch("data/quizQuestions.json");
         questions = await questionsResponse.json();
 
-        const ticketsResponse = await fetch("/data/tickets.json");
+        const ticketsResponse = await fetch("data/tickets.json");
         const ticketsData = await ticketsResponse.json();
         let tickets = ticketsData.tickets[networkId];
 
