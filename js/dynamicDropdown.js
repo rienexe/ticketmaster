@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let networks = [];
 
     function loadNetworks() {
-        fetch("data/networks.json")
+        fetch("/ticketmaster/data/networks.json")
             .then(response => response.json())
             .then(data => {
                 networks = Object.entries(data.networks).map(([id, network]) => ({ id, ...network }));
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     networkSelect.addEventListener("change", () => {
         submitButton.disabled = false;
         const selectedNetworkId = networkSelect.value;
-        submitButton.setAttribute("onclick", `location.href='pages/ticket/quiz?network=${selectedNetworkId}'`);
+        submitButton.setAttribute("onclick", `location.href='/ticketmaster/pages/ticket/quiz?network=${selectedNetworkId}'`);
     });
 
     // Initialisieren
