@@ -29,6 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 countrySelect.appendChild(option);
             });
         } catch (error) {
+            var countryArr = ["Austria", "Germany", "Switzerland"];
+
+            for (var i = 0; i < countryArr.length; i++) {
+                var opt = countryArr[i];
+                var el = document.createElement("option");
+                el.text = opt;
+                el.value = opt;
+                
+                countrySelect.add(el);
+            }
             console.error("Error fetching country data:", error);
         }
     }
